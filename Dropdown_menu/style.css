@@ -1,0 +1,91 @@
+
+@import url(reset.css);
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu__top {
+    background-color: rgb(230, 113, 113);
+}
+
+.menu {
+    width: 50rem;
+    height: 3rem;
+    margin: 0 auto;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.4rem;
+    text-shadow: 3px 3px 4px rgba(96,41,26,0.6);
+    background-color: indianred;
+    border-radius: 0 0 .6rem .6rem;
+    border-bottom: rgb(187, 63, 63) solid .15rem;
+    display: flex;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.menu__button {
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    border-right: rgb(187, 63, 63) dashed .15rem;
+    text-align: center;
+    position: relative;
+}
+
+.menu__button-link {
+    color: rgb(255, 246, 228);
+    padding: .7rem;
+}
+
+.menu__button-link:hover {
+    color: rgb(96,41,26,0.6);
+}
+
+.menu__button:last-child {
+    border-right: none;
+}
+
+.drop {
+    background-color: rgb(230, 113, 113);
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 0 0 .6rem .6rem;
+    border-bottom: rgb(187, 63, 63) solid .15rem;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 2.93rem;
+    display: none;
+}
+
+a.menu__button-link:hover + ul,
+ul.drop:hover{
+    display: block;
+}
+
+.drop__button {
+    height: 2.4rem;
+
+}
+
+.drop__button-link {
+    color: rgb(255, 246, 228);
+    padding: .7rem;
+
+}
+
+.drop__button:hover {
+    background-color: indianred;
+    border-bottom: rgb(187, 63, 63) dashed .15rem;
+}
+
+.drop__button:last-child:hover {
+    background-color: indianred;
+    border-radius: 0 0 .6rem .6rem;
+}
